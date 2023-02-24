@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "description": "Reproduction for transformSync issue (v0.17.10 and treeShaking)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "typescript": "latest",
+    "esbuild": "0.17.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x5424/esbuild-repro.git"
+  }
+}
