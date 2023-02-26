@@ -1,1 +1,2 @@
-import React from 'react';export const TestFn = (): string => 'Transpiled'
+import React from 'react';
+export const TestFn = (): string => 'Transpiled'

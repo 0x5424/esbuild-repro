@@ -3,4 +3,11 @@ import { transformSync } from 'esbuild'
 
 const example = readFileSync('./example.ts')
 
-export const actual = transformSync(example.toString(), { loader: 'ts', treeShaking: false })
+export const actual = transformSync(example.toString(), {
+  loader: 'ts',
+  tsconfigRaw: `{
+    "compilerOptions": {
+      "preserveValueImports": true
+    },
+  }`
+})
